@@ -1,0 +1,30 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 6%;
+    right: 3%;
+    width: 4rem;
+    height: 4rem;
+    &:hover {
+        text-decoration: none;
+    }
+    img {
+        width: 100%;
+    }
+    &_mark {
+        color: #000;
+        text-decoration: none;
+        font-size: 1.8rem;
+        line-height: 0;
+    }
+}
+
+@media(max-width: 768px) {
+    .pageup {
+        width: 3rem;
+        height: 3rem;
+        &_mark {
+            font-size: 1.2rem;
+        }
+    }
+}

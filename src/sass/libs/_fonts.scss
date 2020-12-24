@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Gotham Pro Black';
+	font-display: swap;
+	src: local('GothamPro-Black'),
+	url('/fonts/GothamPro/GothamPro-Black.woff') format('woff'),
+	url('/fonts/GothamPro/GothamPro-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Gill Sans Pro Cyrillic';
+	font-display: swap;
+	src: local('GillSansProCyrillic-Medium'),
+    url('/fonts/GillSansPro/GillSansProCyrillic-Medium.woff') format('woff'),
+    url('/fonts/GillSansPro/GillSansProCyrillic-Medium.woff2') format('woff2'),
+	url('/fonts/GillSansPro/GillSansProCyrillic-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gill Sans Pro Cyrillic';
+	font-display: swap;
+	src: local('GillSansProCyrillic-Bold'),
+    url('/fonts/GillSansPro/GillSansProCyrillic-Bold.woff') format('woff'),
+    url('/fonts/GillSansPro/GillSansProCyrillic-Bold.woff2') format('woff2'),
+	url('/fonts/GillSansPro/GillSansProCyrillic-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gill Sans Pro Cyrillic';
+	font-display: swap;
+	src: local('GillSansProCyrillic-Light'),
+    url('/fonts/GillSansPro/GillSansProCyrillic-Light.woff') format('woff'),
+    url('/fonts/GillSansPro/GillSansProCyrillic-Light.woff2') format('woff2'),
+	url('/fonts/GillSansPro/GillSansProCyrillic-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}

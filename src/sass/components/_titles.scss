@@ -1,0 +1,20 @@
+.title {
+    color: $text-color;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    line-height: 1;
+    &_sub {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .title {
+        font-size: 3rem;
+        &_sub {
+            font-size: 2.4rem;
+        }
+    }
+
+    
+}

@@ -1,0 +1,10 @@
+.text {
+    color: $text-color;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.8;
+    &_timetable {
+        width: 60%;
+        margin-right: 4rem;
+    }
+}

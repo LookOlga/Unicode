@@ -1,0 +1,33 @@
+.button {
+    min-width: 20rem;
+    max-width: 24rem;
+    height: 5rem;
+    background-color: $second-color;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    &:hover {
+        background-color: $hover-second;
+    }
+    &_blue {
+        background-color: $main-color;
+        &:hover {
+            background-color: $hover-main;   
+        }
+    }
+    &_submit {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        width: 20rem;
+        height: 5rem;
+        font-size: 1.8rem;
+    }
+}

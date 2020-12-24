@@ -1,0 +1,99 @@
+@import 'libs/fonts';
+@import 'base/variables';
+@import 'base/animation';
+
+
+* {
+	font-family: 'Gill Sans Pro Cyrillic', 'Lato','Roboto', sans-serif;
+    padding: 0;
+	margin: 0;
+	line-height: 1.4;
+	box-sizing: border-box;
+
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 22px;
+	color: $text-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0
+}
+
+a {
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+input, textarea {
+	outline: none;
+}
+
+button:focus, button:visited {
+	outline: none;
+	border: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+section {
+	margin: 6rem 0;
+	padding: 2rem 0;
+}
+
+.promo {
+	margin-top: 0;
+}
+
+@media(max-width:768px){
+	section {
+		margin: 2.8rem 0;
+	}
+
+	body {
+		font-size: 18px;
+	}
+
+	.container {
+		padding: 0 20px;
+	}
+}
+@import 'components/text';
+@import 'components/titles';
+@import 'components/buttons';
+@import 'components/wrapper';
+@import 'components/modal';
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/education';
+@import 'blocks/program';
+@import 'blocks/advantages';
+@import 'blocks/online';
+@import 'blocks/price';
+@import 'blocks/timetable';
+@import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'blocks/pageup';
+

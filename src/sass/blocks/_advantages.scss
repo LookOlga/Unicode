@@ -1,0 +1,39 @@
+.advantages {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 3.5rem;
+    }
+
+    &__item {
+        width: 48%;
+        min-height: 10rem;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        box-shadow: 0px 0px 10px 0px #ccc;
+    }
+
+    &__icon {
+        margin-right: 2rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    &__desc {
+        color: $text-color;
+        text-align: left;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .advantages {
+        &__item {
+            width: 100%;
+        }
+
+    }
+}
