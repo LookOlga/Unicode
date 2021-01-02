@@ -24,9 +24,11 @@ $(function () {
     
     $('[data-modal=letter]').on('click', function () {
         $('.overlay, #letter').fadeIn('slow');
+        $('body').css('overflow', 'hidden');
     });
     $('.modal__close').on('click', function () {
         $('.overlay, #letter, #thanks').fadeOut('slow');
+        $('body').css('overflow', 'visible');
     });
     
     
@@ -41,5 +43,12 @@ $(function () {
     function toggle() {
         $('.hamburger').toggleClass('hamburger_active');
         $('.header__menu').toggleClass('header__menu_active');
+
+        if($('.hamburger').hasClass('hamburger_active')) {
+            $('body').css('overflow', 'hidden');
+        } else {
+            $('body').css('overflow', 'visible');
+        }
     }
+
 })
