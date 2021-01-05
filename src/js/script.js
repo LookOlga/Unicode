@@ -5,16 +5,19 @@ $(window).on('load', function() {
 
 });
 
-$(function () {
-    $(window).scroll(function () {
-        console.log('fff');
+$(document).ready(function() {
+
+    function pageUpBtn() {
+        const pageUp = $('.pageup');
         if ($(this).scrollTop() > 1000) {
-            $('.pageup').fadeIn();
-            console.log('ddd');
+            pageUp.fadeIn();
         } else {
-            $('.pageup').fadeOut();
+            pageUp.fadeOut();
         }
-    });
+    }
+    pageUpBtn();
+
+    $(window).on('scroll', pageUpBtn);
     
     $("a[href^='#']").click(function () {
         const _href = $(this).attr("href");
@@ -33,7 +36,7 @@ $(function () {
         $('body').css('overflow', 'visible');
     });
     
-    let burger = false;
+
     $('.hamburger').on('click', function () {
         toggle();
         overflow();
