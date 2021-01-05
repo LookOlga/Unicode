@@ -7,6 +7,41 @@
     <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Unicode</title>
+    <style>
+        .preloader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s;
+            z-index: 1000000000;
+            overflow: hidden;
+            background-color: #fefefe;
+        }
+
+        .preloader__circles {
+            display: flex;
+        }
+
+        .preloader__circle {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: #fba51a;
+            margin: 1rem;
+            transition: 0.5s all ease;
+            animation: float 1s infinite;
+
+        }
+
+        .preloader__circle:nth-child(even) {
+            background-color: #4052f2;
+        }
+    </style>
 </head>
 
 <body>
